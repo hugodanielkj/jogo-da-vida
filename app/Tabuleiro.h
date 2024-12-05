@@ -1,0 +1,7 @@
+class Tabuleiro{
+  private:
+
+  public:
+
+
+};

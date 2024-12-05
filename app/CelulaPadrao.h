@@ -1,0 +1,7 @@
+class CelulaPadrao{
+  private:
+
+  public:
+
+
+};
