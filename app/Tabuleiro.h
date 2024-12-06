@@ -3,10 +3,10 @@
 
 #include "Celula.h"
 
-class Tabuleiro : public Celula{
+class Tabuleiro{
   private:
     static const int SIZE;
-    Celula** tabuleiro; // Ponteiro para desalocar tabuleiro antigo caso precise aumentar de tamanho
+    Celula*** _tabuleiro; // Matriz que guarda enderecos de celulas
 
   public:
     Tabuleiro(int size);

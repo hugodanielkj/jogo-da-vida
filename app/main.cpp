@@ -10,4 +10,6 @@
 int main(){
   Simulacao simulacao;
   simulacao.abrirMenu();
+
+  Tabuleiro tabuleiro(50);
 }
