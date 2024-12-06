@@ -3,15 +3,28 @@
 #ifndef CELULA_H
 #define CELULA_H
 
+#include <vector>
+
 class Celula{
   protected:
+    // Atributos static
     static int _geracao;
-    int _id;
+    static int _numeroDeCelulasNoTabuleiro;
+    static int _numeroDeCelulasExistentes;
+    std::vector<Celula*> _celulas;    //deveria ser static
+
+    int _id;  // Comeca em 1
     bool _estaViva;
-    bool _condicaoDaProximaGeracao;    // salva o resultado de interagir()
+    bool _condicaoDaProximaGeracao;    // Salva o resultado de interagir()
 
   public:
-    virtual void interagir() = 0;
+    Celula();
+    //virtual void interagir();
+
+    // Funcoes do vetor de celulas
+    void criarCelulas();
+    void destruirCelulas();
+    std::vector<Celula*> getCelulas();
 
 };
 
